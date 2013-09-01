@@ -1,0 +1,26 @@
+{
+  "name": "beardtree",
+  "version": "0.0.0",
+  "description": "beardtree's site",
+  "authors": [
+    "Dan Kaplun <dan@beardtree.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "less.js": "~1.5.1",
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.0",
+    "jquery-color": "~2.1.2",
+    "font-awesome": "~4.0.3",
+    "animate.css": "~3.0.0"
+  },
+  "homepage": "http://beardtree.com"
+}
