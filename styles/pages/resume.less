@@ -1,0 +1,21 @@
+@import "~bootstrap/less/bootstrap.less";
+@import "../base.less";
+
+
+.resume {
+  h1 small { font-size: 50%; display: block; }
+
+  @media print {
+    a[href]:after { display: none; }
+
+    // make it fit
+    .page-header { margin: 0; padding: 0; }
+    section h4, section h5, section :last-child { margin-bottom: 0; }
+    aside h3 { margin: 0; }
+    p { margin-bottom: 5px; }
+  }
+}
+
+// assertions
+.clear-left { .clear-left; }
+.padding-large-vertical { .padding-large-vertical; }

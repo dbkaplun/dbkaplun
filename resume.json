@@ -1,13 +1,10 @@
 {
   "basics": {
-    "namePrefix": "My name is",
     "name": "Dan Kaplun",
-    "summary": "Let's make stuff together!",
-
-    "pdfUrl": "http://dbkaplun.com/resume.pdf",
-    "picture": "http://dbkaplun.com/images/me.jpg",
     "email": "dbkaplun@gmail.com",
     "phone": "(216) 236-4601",
+    "pdfUrl": "http://dbkaplun.com/resume.pdf",
+    "picture": "http://dbkaplun.com/static/images/me.jpg",
     "website": "http://dbkaplun.com",
     "profiles": [{
       "network": "Github",
@@ -35,7 +32,7 @@
     "company": "Essence Digital",
     "position": "Software Engineer",
     "website": "http://essencedigital.com/",
-    "summary": "Global digital media agency and independent buyer of digital media<br>Python (Django), Go, JavaScript (AngularJS), PostgreSQL, Oracle, GCE",
+    "summary": "Global digital media agency and independent buyer of digital media<br>Go, Python (Django), JavaScript (AngularJS), PostgreSQL, Oracle, GCE",
     "highlights": [
       "Redesigned and optimized new version of internal metrics viewer",
       "Helped roll out new version of media-buying platform as part of Olive team",
@@ -77,18 +74,6 @@
     "location": "Columbus, OH",
     "startDate": "2009-09-01",
     "endDate": "2010-12-01"
-  }, {
-    "institution": "Cleveland State University",
-    "area": "Studied graduate math courses while enrolled in high school, represented CSU as part of 1st place two-person team in MAA regionals",
-    "location": "Cleveland, OH",
-    "startDate": "2008-09-01",
-    "endDate": "2009-06-01"
-  }, {
-    "institution": "Richmond Heights High School",
-    "area": "Honors, Top 10 graduate",
-    "location": "Cleveland, OH",
-    "startDate": "2005-11-01",
-    "endDate": "2007-06-01"
   }],
   "skills": [{
     "name": "",

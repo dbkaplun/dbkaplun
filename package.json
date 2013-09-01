@@ -1,47 +1,39 @@
 {
   "name": "dbkaplun",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Dan Kaplun's website",
+  "homepage": "http://dbkaplun.com",
+  "repository": "https://github.com/dbkaplun/dbkaplun",
+  "bugs": "https://github.com/dbkaplun/dbkaplun/issues",
   "main": "index.html",
   "scripts": {
-    "build": "gulp",
-    "watch": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "start": "next start",
+
+    "build": "npm run clean-build && npm run build-next && npm run build-fonts && npm run build-static && npm run build-pdf",
+    "clean-build": "find out -mindepth 1 -delete",
+    "build-next": "next build && next export",
+    "build-fonts": "find node_modules -regextype posix-egrep -regex '.*\\.(ttf|woff|woff2|eof)' -exec cp {} static/fonts \\;",
+    "build-static": "cp -R static/root/. out",
+    "build-pdf": "./build-pdf.js",
+
+    "deploy-gh-pages": "git push origin \"$(git subtree split --prefix out master):gh-pages\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dbkaplun/dbkaplun.git"
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "fmath": "^1.0.1",
+    "font-awesome": "^4.7.0",
+    "less": "2.7.2",
+    "less-loader": "4.0.5",
+    "next": "3.0.1-beta.17",
+    "postcss-cssnext": "3.0.2",
+    "postcss-loader": "2.0.6",
+    "puppeteer": "^0.11.0",
+    "raw-loader": "0.5.1",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "three": "^0.87.1"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dbkaplun/dbkaplun/issues"
-  },
-  "homepage": "https://github.com/dbkaplun/dbkaplun#readme",
-  "devDependencies": {
-    "bluebird": "^3.1.1",
-    "bootstrap": "^3.3.6",
-    "browserify": "^13.0.0",
-    "cssnano": "^3.3.2",
-    "extend": "^3.0.0",
-    "fmath": "1.0.1",
-    "font-awesome": "^4.5.0",
-    "gulp": "^3.9.0",
-    "gulp-flatten": "^0.2.0",
-    "gulp-htmlmin": "^1.3.0",
-    "gulp-less": "^3.0.3",
-    "gulp-postcss": "^6.0.1",
-    "gulp-sourcemaps": "^2.2.3",
-    "gulp-uglify": "^1.4.2",
-    "gulp-uncss": "1.0.4",
-    "gulp-util": "^3.0.7",
-    "html-pdf": "2.1.0",
-    "isogram": "^0.6.0",
-    "jsonresume-theme-briefstrap": "1.0.0",
-    "string-to-stream": "^1.0.1",
-    "three": "^0.73.1",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0"
-  }
+  "license": "MIT"
 }

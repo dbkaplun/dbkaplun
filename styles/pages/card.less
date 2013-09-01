@@ -1,0 +1,19 @@
+@import "~bootstrap/less/bootstrap.less";
+@import "../base.less";
+
+body {
+  background: url('/static/images/cityscape.gif') black top center/cover no-repeat;
+}
+
+.card.jumbotron {
+  overflow: hidden;
+  background-color: transparent;
+
+  h1 {
+    margin: 15% 0; // vertical margin makes height relative to width
+
+    @media (max-width: @screen-sm-max) {
+      margin: 8% 0;
+    }
+  }
+}
