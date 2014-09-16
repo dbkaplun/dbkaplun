@@ -1,0 +1,129 @@
+{
+  "basics": {
+    "name": "Dan Kaplun",
+    "picture": "images/me.png",
+    "email": "dan@beardtree.com",
+    "phone": "(216) 236-4601",
+    "website": "http://beardtree.com",
+    "summary": "I make computers do cool things for a living. Hire me!",
+    "profiles": [{
+      "network": "LinkedIn",
+      "url": "https://www.linkedin.com/pub/daniel-kaplun/28/589/34"
+    }, {
+      "network": "Github",
+      "username": "beardtree",
+      "url": "https://github.com/beardtree"
+    }, {
+      "network": "Bitbucket",
+      "username": "beardtree",
+      "url": "https://bitbucket.org/beardtree"
+    }]
+  },
+  "work": [{
+    "company": "Flashpoint Intel",
+    "position": "Senior Developer",
+    "website": "http://flashpoint-intel.com/",
+    "startDate": "2014-07-01",
+    "summary": "Deep web scraping and sentiment analysis [Stack: Python (Django), CentOS]",
+    "highlights": [
+      "Supervise all scraping efforts",
+      "Migrated from regular expression-based scraping to true HTML parsing"
+    ]
+  }, {
+    "company": "Transparensee",
+    "position": "Senior Developer",
+    "website": "http://transparensee.com/",
+    "startDate": "2012-05-01",
+    "endDate": "2013-09-01",
+    "summary": "Search engine platform with emphasis on fuzzy matching [Stack: Python (Django), JavaScript (jQuery), AWS (Amazon Linux on EC2, RDS, S3, etc.)]",
+    "highlights": [
+      "Maintainer of service and code for largest client",
+      "Implemented role-based administration tool built on top of Django",
+      "Redesigned search interface; introduced criteria prioritization"
+    ]
+  }, {
+    "company": "Offerpop",
+    "position": "Developer",
+    "website": "http://offerpop.com/",
+    "startDate": "2011-03-01",
+    "endDate": "2012-05-01",
+    "summary": "Social media marketing startup; agile, test-driven philosophy [Stack: Python (Django, mod_python), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu]",
+    "highlights": [
+      "Automated Facebook tab administration using Graph API",
+      "Seamless video uploading using Vimeo's Advanced API and YouTube's Data API",
+      "Robust voting API using Facebook authentication"
+    ]
+  }],
+  "education": [{
+    "institution": "The Ohio State University",
+    "website": "http://osu.edu/",
+    "area": "Major: mathematics, minor: music",
+    "startDate": "2009-09-01",
+    "endDate": "2010-12-01"
+  }, {
+    "institution": "Cleveland State University",
+    "website": "http://csuohio.edu/",
+    "area": "PSEOP: aced graduate-level math courses while enrolled in high school",
+    "startDate": "2008-09-01",
+    "endDate": "2009-06-01"
+  }, {
+    "institution": "Cuyahoga Community College",
+    "website": "http://tri-c.edu/",
+    "area": "PSEOP: exhausted course catalog in math",
+    "startDate": "2007-09-01",
+    "endDate": "2008-12-01"
+  }, {
+    "institution": "Richmond Heights High School",
+    "website": "http://richmondheightsschools.org/",
+    "area": "Top 10 graduate; summa cum laude; with honors",
+    "startDate": "2005-11-01",
+    "endDate": "2007-06-01"
+  }],
+  "awards": [{
+    "title": "Annual CSU Freshman-Sophomore Mathematics Competition",
+    "website": "http://www.csuohio.edu/sciences/dept/mathematics/resources/fsmc.html",
+    "date": "2009-04-17",
+    "awarder": "Cleveland State University",
+    "summary": "1st Place while still attending high school"
+  }, {
+    "title": "Ohio Regional MAA Competition",
+    "website": "http://sections.maa.org/ohio/",
+    "date": "2009-06-01",
+    "awarder": "Mathematical Association of America",
+    "summary": "1st place 2-person team, 4th place overall"
+  }],
+  "skills": [{
+    "name": "Web development",
+    "keywords": ["HTML", "CSS", "Javascript", "Django", "SailsJS", "jQuery", "Backbone"]
+  }, {
+    "name": "Programming",
+    "keywords": ["NodeJS (committer!)", "Python", "C", "C#", "Java", "PHP", "open-source"]
+  }, {
+    "name": "System administration",
+    "keywords": ["Ubuntu Server", "Amazon Linux", "CentOS"]
+  }, {
+    "name": "Database development and administration",
+    "keywords": ["PostgreSQL", "MySQL", "CouchDB"]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }, {
+    "language": "Russian",
+    "fluency": "Limited working proficiency"
+  }],
+  "interests": [{
+    "name": "Music",
+    "keywords": ["composition", "drums", "guitar"]
+  }, {
+    "name": "Bicycling",
+    "keywords": ["single-speed", "chromoly"]
+  }, {
+    "name": "Cars",
+    "keywords": ["'98 Honda Prelude", "'95 Honda Civic"]
+  }],
+  "references": [{
+    "name": "Jason Brodsky-Porges (Product Manager at Offerpop)",
+    "reference": "I had the pleasure to work with Dan Kaplun at Offerpop, where I was the Product Manager for our team. He was a very respected coworker who brought many desirable attributes. He was a very friendly coworker as well as a great communicator who was willing to walk other members of his team through the technology stack in order to get everyone up to speed efficiently on many occasions. He grasped concepts and ideas quickly and was able to efficiently implement them into our technology. I believe you will find Dan to be an excellent web developer and a strong contributor to your organization."
+  }]
+}
