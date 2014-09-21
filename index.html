@@ -1,686 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume of Dan Kaplun</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <style type="text/css">
-    @import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-@charset "utf-8";
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
 
-body{
-  font-family: 'Open Sans', Arial, Tahoma;
-  font-weight: 400;
-  color: #363636;
-  background: #334960;
-}
-blockquote {
-  font-size: 1em;
-}
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie" lang="en">
+<!--<![endif]-->
 
-.container{
-  margin-top: 80px;
-  margin-bottom: 15px;
-  background: #fff;
-}
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="description" />
+        <meta name="keywords" content="keywords"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <title>Dan Kaplun &bull; dan@beardtree.com &bull; (216) 236-4601</title>
 
-#photo-header{
-  margin-top: -75px;
-}
-#photo{
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 5px;
-  background: #334960;
-  display: inline-block;
-}
-#photo img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-#text-header h1{
-  margin: 0;
-  padding: 0;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-#text-header h1::first-line{
-  font-size: 1.5em;
-  font-weight: 800;
-  line-height: 1.5em;
-}
-#text-header h1 span{
-  color: #334960;
-  opacity: 0.7;
-}
-#text-header h1 sup{
-  opacity: 0.5;
-}
-#text-header:after{
-  width: 100%;
-  height: 3px;
-  border-bottom: 1px solid #ddd;
-  margin-top: 15px;
-  content: '';
-  display: block;
-}
+        <!-- style sheets-->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+        <link href="//rawgit.com/beardtree/jsonresume-theme-timeline-beardtree/master/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="//rawgit.com/beardtree/jsonresume-theme-timeline-beardtree/master/build/css/index.css" rel="stylesheet" type="text/css">
 
-.box{
-  padding-bottom: 10px;
-  margin-bottom: 25px;
-}
-.box h2{
-  color: #227c74;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-#awards,
-#education{
-  margin-top: 20px;
-  position: relative;
-  padding: 1em 0;
-  list-style: none;
-}
-#awards:before,
-#education:before {
-  width: 5px;
-  height: 100%;
-  position: absolute;
-  left: 35px;
-  top: 0;
-  content: ' ';
-  display: block;
-  background: #32475c;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-}
-#awards li,
-#education li{
-  width: 100%;
-  z-index: 2;
-  position: relative;
-  float: left;
-}
-#awards .year,
-#education .year{
-  width: 10%;
-  background: #fff;
-  padding: 10px;
-  font-weight: 700;
-  display: inline-block;
-}
-#awards .description,
-#education .description{
-  width: 85%;
-  display: inline-block;
-  background: #eee;
-  margin-bottom: 10px;
-  position: relative;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-#awards .description:after,
-#education .description:after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 0;
-  left: -16px;
-  height: 0;
-  width: 0;
-  border: solid transparent;
-  border-right-color: #eee;
-  border-width: 8px;
-  pointer-events: none;
-}
-#awards .description h3,
-#education .description h3{
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-#awards .description p,
-#education .description p{
-  margin-top: 5px;
-  padding: 0;
-}
-
-.job{
-  margin-bottom: 15px;
-}
-.job .details {
-  margin-left: 3%;
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 10px;
-  background: #eee;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-.job .where{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .year{
-  opacity: 0.7;
-}
-.job .profession{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .description{
-  line-height: 1.5em;
-}
-.job .highlights{
-  padding: 10px 0;
-  font-weight: bold;
-}
-.publication .name{
-  font-size: 1em;
-  font-weight: bold;
-}
-.publication .year{
-    opacity: 0.7;
-}
-.publication p{
-  margin: 0;
-  padding-top: 10px;
-}
-
-.contact-item{
-  width: 100%;
-  float: left;
-}
-.contact-item .icon{
-  padding: 10px;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  color: #32475c;
-  background: #eee;
-}
-.contact-item:last-child .icon{
-  border-bottom: none;
-}
-.contact-item .title{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-weight: 700;
-  opacity: 0.9;
-}
-.contact-item .title.only{
-  margin-top: 10px;
-}
-.contact-item .description{
-  width: 80%;
-  width: calc(100% - 55px);
-  color: #334960;
-}
-
-.item-interests,
-.item-skills{
-  height: 30px;
-  color: #334960;
-  padding: 5px 10px;
-  margin-bottom: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1.1em;
-  font-weight: 600;
-}
-.interest,
-.skill{
-  color: #fff;
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  padding: 5px 10px;
-  background: #32475c;
-  position: relative;
-  font-size: .85em;
-}
-.skill-level {
-  background-color: #227c74;
-  border-radius: 4px;
-  color: #fff;
-  padding: 1px 8px;
-  font-size: .75em;
-  position: absolute;
-  margin: 1px 10px;
-}
-
-#language-skills .skill{
-  margin: 10px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-@media (min-width: 500px) {
-  #education .description{
-    width: 85%;
-  }
-}
-@media (min-width: 768px) {
-  #education .description{
-    width: 85%;
-  }
-}
-@media (min-width: 992px) {
-  #education .description{
-    width: 87%;
-  }
-}
-@media (min-width: 1200px) {
-  #education .description{
-    width: 90%;
-  }
-}
-
-    </style>
-    <style type="text/css" media="print">
-    body {
-  font-size: .95em;
-  -webkit-print-color-adjust: exact;
-}
-
-a[href]:after {
-  content: none !important;
-}
-
-#photo{
-  display: none;
-}
-
-.box {
-  margin-bottom: -10px;
-}
-.col-sm-5{
-  width: 40%;
-  padding: 0 15px;
-}
-
-.col-sm-7{
-  width: 60%;
-  padding: 0 15px;
-}
-
-.skills .col-sm-offset-1,
-.interests .col-sm-offset-1{
-  margin-top: -10px;
-  margin-bottom: 5px;
-}
-
-#awards:before,
-#education:before {
-  background: none;
-}
-
-#awards .description,
-#education .description,
-.job .details {
-  border: 1px solid #eee;
-}
-.publication,
-.publication .panel-heading,
-.publication .name{
-  margin: 0;
-  padding: 0 5px;
-  border: none;
-}
-.publication .panel-body {
-  padding: 0 10px;
-  margin: 0;
-}
-
-.badge {
-  margin: 0;
-}
-
-.list-group-item{
-  border: none;
-  margin: 0;
-  padding: 5px 15px;
-}
-.list-group-item:after{
-  content: '';
-  position: absolute;
-  top: 8px;
-  right: 0;
-  left: -1px;
-  height: 0;
-  width: 0;
-  border: solid transparent;
-  border-right-color: #999;
-  border-width: 4px;
-  pointer-events: none;
- }
-
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div id="photo-header" class="text-center">
-            <!-- PHOTO (AVATAR) -->
-            <div id="photo">
-              <img src="images&#x2F;me.png" alt="avatar">
-            </div>
-            <div id="text-header" >
-              <h1>Dan Kaplun<br></h1>
-              <p>I make computers do cool things for a living. Hire me!</p>
-            </div>
-          </div>
+        <!-- scripts-->
+        <script data-main="//rawgit.com/beardtree/jsonresume-theme-timeline-beardtree/master/js/index" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+    </head>
+    <body>
+        <!-- Top icons -->
+        <div class="top-icons">
+            <a class="top-menu hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Menu toggle"><span class="glyphicon glyphicon-th-list"></span></a>
+            <a href="#" class="top-download-resume hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Download resume"><span class="glyphicon glyphicon-cloud-download"></span></a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-7">
-          <!-- WORK EXPERIENCE -->
-          <div class="box">
-            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">Flashpoint Intel</div>
-                    <div class="address">
-                      <a href="http:&#x2F;&#x2F;flashpoint-intel.com&#x2F;" target= "_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;flashpoint-intel.com&#x2F;</a>
-                    </div>
-                    <div class="year">July 2014 – Present</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-offset-1 col-xs-11">
-                    <div class="profession">Senior Developer</div>
-                    <div class="description">
-                      Deep web scraping and sentiment analysis [Stack: Python (Django), CentOS]
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">Supervise all scraping efforts</li>
-                        <li class="list-group-item">Migrated from regular expression-based scraping to true HTML parsing</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">Transparensee</div>
-                    <div class="address">
-                      <a href="http:&#x2F;&#x2F;transparensee.com&#x2F;" target= "_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;transparensee.com&#x2F;</a>
-                    </div>
-                    <div class="year">May 2012 – September 2013</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-offset-1 col-xs-11">
-                    <div class="profession">Senior Developer</div>
-                    <div class="description">
-                      Search engine platform with emphasis on fuzzy matching [Stack: Python (Django), JavaScript (jQuery), AWS (Amazon Linux on EC2, RDS, S3, etc.)]
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">Maintainer of service and code for largest client</li>
-                        <li class="list-group-item">Implemented role-based administration tool built on top of Django</li>
-                        <li class="list-group-item">Redesigned search interface; introduced criteria prioritization</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">Offerpop</div>
-                    <div class="address">
-                      <a href="http:&#x2F;&#x2F;offerpop.com&#x2F;" target= "_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;offerpop.com&#x2F;</a>
-                    </div>
-                    <div class="year">March 2011 – May 2012</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-offset-1 col-xs-11">
-                    <div class="profession">Developer</div>
-                    <div class="description">
-                      Social media marketing startup; agile, test-driven philosophy [Stack: Python (Django, mod_python), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu]
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">Automated Facebook tab administration using Graph API</li>
-                        <li class="list-group-item">Seamless video uploading using Vimeo's Advanced API and YouTube's Data API</li>
-                        <li class="list-group-item">Robust voting API using Facebook authentication</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <!-- EDUCATION -->
-          <div class="box">
-            <h2><i class="fa fa-university ico"></i> Education</h2>
-            <ul id="education" class="clearfix">
-              <li>
-                <div class="year pull-left">2009 2010</div>
-                <div class="description pull-right">
-                  <h3>The Ohio State University</h3>
-                  
-                  <p>Major: mathematics, minor: music</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2008 2009</div>
-                <div class="description pull-right">
-                  <h3>Cleveland State University</h3>
-                  
-                  <p>PSEOP: aced graduate-level math courses while enrolled in high school</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2007 2008</div>
-                <div class="description pull-right">
-                  <h3>Cuyahoga Community College</h3>
-                  
-                  <p>PSEOP: exhausted course catalog in math</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">2005 2007</div>
-                <div class="description pull-right">
-                  <h3>Richmond Heights High School</h3>
-                  
-                  <p>Top 10 graduate; summa cum laude; with honors</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- AWARDS -->
-          <div class="box">
-            <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-            <ul id="awards" class="clearfix">
-              <li>
-                <div class="year pull-left">April  2009</div>
-                <div class="description pull-right">
-                  <h3>Cleveland State University</h3>
-                  <p><i class="fa fa-trophy ico"></i> Annual CSU Freshman-Sophomore Mathematics Competition</p>
-                  <p>1st Place while still attending high school</p>
-                </div>
-              </li>
-              <li>
-                <div class="year pull-left">June  2009</div>
-                <div class="description pull-right">
-                  <h3>Mathematical Association of America</h3>
-                  <p><i class="fa fa-trophy ico"></i> Ohio Regional MAA Competition</p>
-                  <p>1st place 2-person team, 4th place overall</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-5">
-          <!-- CONTACT -->
-          <div class="box clearfix">
-            <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-              <div class="title only pull-right">(216) 236-4601</div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right"><a href="mailto:dan@beardtree.com" target="_blank">dan@beardtree.com</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
-              <div class="title only pull-right"><a href="http:&#x2F;&#x2F;beardtree.com" target="_blank">http:&#x2F;&#x2F;beardtree.com</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-linkedin-square fa-fw"></span></div>
-              <div class="title pull-right">LinkedIn</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;pub&#x2F;daniel-kaplun&#x2F;28&#x2F;589&#x2F;34" target="_blank">https:&#x2F;&#x2F;www.linkedin.com&#x2F;pub&#x2F;daniel-kaplun&#x2F;28&#x2F;589&#x2F;34</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-github-square fa-fw"></span></div>
-              <div class="title pull-right">Github</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;beardtree" target="_blank">beardtree</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-bitbucket fa-fw"></span></div>
-              <div class="title pull-right">Bitbucket</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;bitbucket.org&#x2F;beardtree" target="_blank">beardtree</a></div>
-            </div>
-          </div>
-          <!-- SKILLS -->
-          <div class="box">
-            <h2><i class="fa fa-tasks ico"></i> Skills</h2>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  Web development
-                  
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">HTML</span>
-                <span class= "skill badge">CSS</span>
-                <span class= "skill badge">Javascript</span>
-                <span class= "skill badge">Django</span>
-                <span class= "skill badge">SailsJS</span>
-                <span class= "skill badge">jQuery</span>
-                <span class= "skill badge">Backbone</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  Programming
-                  
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">NodeJS (committer!)</span>
-                <span class= "skill badge">Python</span>
-                <span class= "skill badge">C</span>
-                <span class= "skill badge">C#</span>
-                <span class= "skill badge">Java</span>
-                <span class= "skill badge">PHP</span>
-                <span class= "skill badge">open-source</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  System administration
-                  
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">Ubuntu Server</span>
-                <span class= "skill badge">Amazon Linux</span>
-                <span class= "skill badge">CentOS</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  Database development and administration
-                  
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">PostgreSQL</span>
-                <span class= "skill badge">MySQL</span>
-                <span class= "skill badge">CouchDB</span>
-              </div>
-            </div>
-          </div>
-          <!-- LANGUAGES -->
-          <div class="box">
-            <h2><i class="fa fa-language ico"></i> Languages</h2>
-            <ul class="list-group">
-              <li class=" list-group-item">English<span class="skill badge pull-right">Native speaker</span></li>
-              <li class=" list-group-item">Russian<span class="skill badge pull-right">Limited working proficiency</span></li>
-            </ul>
-          </div>
-          <!-- HOBBIES -->
-          <div class="box">
-            <h2><i class="fa fa-heart ico"></i> Interests</h2>
-            <div class="interests clearfix">
-              <div class="item-interests">
-                  Music
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "interest badge">composition</span>
-                <span class= "interest badge">drums</span>
-                <span class= "interest badge">guitar</span>
-              </div>
-            </div>
-            <div class="interests clearfix">
-              <div class="item-interests">
-                  Bicycling
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "interest badge">single-speed</span>
-                <span class= "interest badge">chromoly</span>
-              </div>
-            </div>
-            <div class="interests clearfix">
-              <div class="item-interests">
-                  Cars
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "interest badge">'98 Honda Prelude</span>
-                <span class= "interest badge">'95 Honda Civic</span>
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <h2><i class= "fa fa-check-square ico"></i> References</h2>
-            <blockquote>
-              <div>I had the pleasure to work with Dan Kaplun at Offerpop, where I was the Product Manager for our team. He was a very respected coworker who brought many desirable attributes. He was a very friendly coworker as well as a great communicator who was willing to walk other members of his team through the technology stack in order to get everyone up to speed efficiently on many occasions. He grasped concepts and ideas quickly and was able to efficiently implement them into our technology. I believe you will find Dan to be an excellent web developer and a strong contributor to your organization.</div>
-              <footer>
-                <a href="" target= "_blank">Jason Brodsky-Porges (Product Manager at Offerpop)</a>
-              </footer>
-            </blockquote><br>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JQUERY -->
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- BOOTSTRAP -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!-- end Top icons -->
 
-  </body>
+        <!-- Navigation -->
+        <nav id="spy" class="spy hidden-sm hidden-xs">
+            <ul>
+                <li class="active"><a href="#work-experience">Work experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+        <!-- end Navigation -->
+
+        <!-- Navigation for small devices -->
+        <nav id="mini-nav" class="spy visible-sm visible-xs">
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="#work-experience">Work experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#awards">Awards</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                        <li><a href="#references">References</a></li>
+                    </ul>
+                </li>
+              </ul>
+        </nav>
+        <!-- end Navigation for small devices -->
+
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header-content col-sm-8 col-sm-offset-2 text-center">
+                        <img src="http:&#x2F;&#x2F;beardtree.com&#x2F;images&#x2F;me.png" class="face" alt="A picture of me">
+                        <hr class="empty">
+                        <p class="header-name">Dan Kaplun</p>
+                        <p class="header-subtitle">I make computers do cool things for a living. Hire me!</p>
+                        <p><a href="mailto:dan@beardtree.com" target="_blank">dan@beardtree.com</a> &bull; (216) 236-4601 &bull; <a href="mailto:http:&#x2F;&#x2F;beardtree.com" target="_blank">http:&#x2F;&#x2F;beardtree.com</a></p>
+                        <p>
+                            <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;pub&#x2F;daniel-kaplun&#x2F;28&#x2F;589&#x2F;34" class="btn btn-default" target="_blank"><span class="fa fa-linkedin"></span></a>
+                            <a href="https:&#x2F;&#x2F;github.com&#x2F;beardtree" class="btn btn-default" target="_blank"><span class="fa fa-github"></span></a>
+                            <a href="https:&#x2F;&#x2F;bitbucket.org&#x2F;beardtree" class="btn btn-default" target="_blank"><span class="fa fa-bitbucket"></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end Header -->
+
+        <!-- Work experience -->
+        <section id="work-experience" class="work-experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-briefcase"></span>Work experience</li>
+                            <li>
+                                <span class="note">July 2014 - </span>
+                                <p><strong>Senior Developer</strong> at <strong><a href="http:&#x2F;&#x2F;flashpoint-intel.com&#x2F;" target="_blank">Flashpoint Intel</a></strong></p>
+                                <p class="description">Deep web scraping and sentiment analysis [Stack: Python (Django), CentOS]</p>
+                                <ul>
+                                    <li>Supervise all scraping efforts</li>
+                                    <li>Migrated from regular expression-based scraping to true HTML parsing</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="note">May 2012 - September 2013</span>
+                                <p><strong>Senior Developer</strong> at <strong><a href="http:&#x2F;&#x2F;transparensee.com&#x2F;" target="_blank">Transparensee</a></strong></p>
+                                <p class="description">Search engine platform with emphasis on fuzzy matching [Stack: Python (Django), JavaScript (jQuery), AWS (Amazon Linux on EC2, RDS, S3, etc.)]</p>
+                                <ul>
+                                    <li>Maintainer of service and code for largest client</li>
+                                    <li>Implemented role-based administration tool built on top of Django</li>
+                                    <li>Redesigned search interface; introduced criteria prioritization</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="note">March 2011 - May 2012</span>
+                                <p><strong>Developer</strong> at <strong><a href="http:&#x2F;&#x2F;offerpop.com&#x2F;" target="_blank">Offerpop</a></strong></p>
+                                <p class="description">Social media marketing startup; agile, test-driven philosophy [Stack: Python (Django, mod_python), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu]</p>
+                                <ul>
+                                    <li>Automated Facebook tab administration using Graph API</li>
+                                    <li>Seamless video uploading using Vimeo&#39;s Advanced API and YouTube&#39;s Data API</li>
+                                    <li>Robust voting API using Facebook authentication</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Work experience -->
+
+        <!-- Education -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-book"></span>Education</li>
+                            <li>
+                                <span class="note has-annotation">September 2009 - December 2010</span>
+                                <p><strong></strong><strong><a href="http:&#x2F;&#x2F;osu.edu&#x2F;" target="_blank">The Ohio State University</a></strong></p>
+                                <p class="description">Major: mathematics, minor: music</p>
+                            </li>
+                            <li>
+                                <span class="note has-annotation">September 2008 - June 2009</span>
+                                <p><strong></strong><strong><a href="http:&#x2F;&#x2F;csuohio.edu&#x2F;" target="_blank">Cleveland State University</a></strong></p>
+                                <p class="description">PSEOP: aced graduate-level math courses while enrolled in high school</p>
+                            </li>
+                            <li>
+                                <span class="note has-annotation">September 2007 - December 2008</span>
+                                <p><strong></strong><strong><a href="http:&#x2F;&#x2F;tri-c.edu&#x2F;" target="_blank">Cuyahoga Community College</a></strong></p>
+                                <p class="description">PSEOP: exhausted course catalog in math</p>
+                            </li>
+                            <li>
+                                <span class="note has-annotation">November 2005 - June 2007</span>
+                                <p><strong></strong><strong><a href="http:&#x2F;&#x2F;richmondheightsschools.org&#x2F;" target="_blank">Richmond Heights High School</a></strong></p>
+                                <p class="description">Top 10 graduate; summa cum laude; with honors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Education -->
+
+        <!-- Awards -->
+        <section id="awards" class="awards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-star"></span>Awards</li>
+                            <li>
+                                <span class="note">April 2009</span> <span class="annotation">Cleveland State University</span>
+                                <p><strong><a href="http:&#x2F;&#x2F;www.csuohio.edu&#x2F;sciences&#x2F;dept&#x2F;mathematics&#x2F;resources&#x2F;fsmc.html" target="_blank">Annual CSU Freshman-Sophomore Mathematics Competition</a></strong></p>
+                                <p class="description">1st Place while still attending high school</p>
+                            </li>
+                            <li>
+                                <span class="note">June 2009</span> <span class="annotation">Mathematical Association of America</span>
+                                <p><strong><a href="http:&#x2F;&#x2F;sections.maa.org&#x2F;ohio&#x2F;" target="_blank">Ohio Regional MAA Competition</a></strong></p>
+                                <p class="description">1st place 2-person team, 4th place overall</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Education -->
+
+
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-tasks"></span>Skills</li>
+                            <li>
+                                <p><strong class="has-annotation">Web development</strong> <span class="annotation"></span></p>
+                                <p>
+                                    <span class="label label-default">HTML</span>
+                                    <span class="label label-default">CSS</span>
+                                    <span class="label label-default">Javascript</span>
+                                    <span class="label label-default">Django</span>
+                                    <span class="label label-default">SailsJS</span>
+                                    <span class="label label-default">jQuery</span>
+                                    <span class="label label-default">Backbone</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong class="has-annotation">Programming</strong> <span class="annotation"></span></p>
+                                <p>
+                                    <span class="label label-default">NodeJS (committer!)</span>
+                                    <span class="label label-default">Python</span>
+                                    <span class="label label-default">C</span>
+                                    <span class="label label-default">C#</span>
+                                    <span class="label label-default">Java</span>
+                                    <span class="label label-default">PHP</span>
+                                    <span class="label label-default">open-source</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong class="has-annotation">System administration</strong> <span class="annotation"></span></p>
+                                <p>
+                                    <span class="label label-default">Ubuntu Server</span>
+                                    <span class="label label-default">Amazon Linux</span>
+                                    <span class="label label-default">CentOS</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong class="has-annotation">Database development and administration</strong> <span class="annotation"></span></p>
+                                <p>
+                                    <span class="label label-default">PostgreSQL</span>
+                                    <span class="label label-default">MySQL</span>
+                                    <span class="label label-default">CouchDB</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Skills -->
+
+        <!-- Interests -->
+        <section id="interests" class="interests">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-heart-empty"></span>Interests</li>
+                            <li>
+                                <p><strong class="has-annotation">Music</strong></p>
+                                <p>
+                                    <span class="label label-default">composition</span>
+                                    <span class="label label-default">drums</span>
+                                    <span class="label label-default">guitar</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong class="has-annotation">Bicycling</strong></p>
+                                <p>
+                                    <span class="label label-default">single-speed</span>
+                                    <span class="label label-default">chromoly</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong class="has-annotation">Cars</strong></p>
+                                <p>
+                                    <span class="label label-default">&#39;98 Honda Prelude</span>
+                                    <span class="label label-default">&#39;95 Honda Civic</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Interests -->
+
+        <!-- Languages -->
+        <section id="languages" class="languages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-globe"></span>Languages</li>
+                            <li>
+                                <p><strong class="has-annotation">English</strong> <span class="annotation">Native speaker</span></p>
+                            </li>
+                            <li>
+                                <p><strong class="has-annotation">Russian</strong> <span class="annotation">Limited working proficiency</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Languages -->
+
+        <!-- References -->
+        <section id="references" class="references">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-thumbs-up"></span>References</li>
+                            <li>
+                                <blockquote><p>I had the pleasure to work with Dan Kaplun at Offerpop, where I was the Product Manager for our team. He was a very respected coworker who brought many desirable attributes. He was a very friendly coworker as well as a great communicator who was willing to walk other members of his team through the technology stack in order to get everyone up to speed efficiently on many occasions. He grasped concepts and ideas quickly and was able to efficiently implement them into our technology. I believe you will find Dan to be an excellent web developer and a strong contributor to your organization.</p>
+                                    <small>Jason Brodsky-Porges (Product Manager at Offerpop)</small>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end References -->
+
+        <section class="up">
+            <div class="container">
+                <div class="row">
+                    <div class="contact col-sm-7 col-sm-offset-5">
+                        <ul>
+                            <li class="title"><span class="glyphicon glyphicon-arrow-up"></span>Up</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
