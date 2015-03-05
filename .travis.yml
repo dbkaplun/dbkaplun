@@ -7,5 +7,5 @@ before_install:
 notifications:
   webhooks:
     urls:
-      - http://beardtree.com:9001/travis
+      - http://secrettriangle.net:9001/travis
     on_failure: never
