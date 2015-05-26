@@ -1,14 +1,14 @@
 {
-  "name": "beardtree",
+  "name": "dbkaplun",
   "version": "0.0.0",
-  "description": "beardtree's site",
+  "description": "dbkaplun's site",
   "main": "index.html",
   "peerDependencies": {
     "resume-cli": "*"
   },
   "repository": {
     "type": "git",
-    "url": "dbkaplun/beardtree"
+    "url": "dbkaplun/dbkaplun"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT"
