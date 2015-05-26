@@ -2,21 +2,21 @@
   "basics": {
     "name": "Dan Kaplun",
     "picture": "http://beardtree.com/images/me.png",
-    "email": "dan@secrettriangle.net",
+    "email": "dbkaplun@gmail.com",
     "phone": "(216) 236-4601",
-    "website": "http://secrettriangle.net",
+    "website": "http://dbkaplun.com",
     "summary": "I make computers do cool things for a living. Hire me!",
     "profiles": [{
       "network": "LinkedIn",
       "url": "https://www.linkedin.com/pub/daniel-kaplun/28/589/34"
     }, {
       "network": "Github",
-      "username": "secrettriangle",
-      "url": "https://github.com/secrettriangle"
+      "username": "dbkaplun",
+      "url": "https://github.com/dbkaplun"
     }, {
       "network": "Bitbucket",
-      "username": "secrettriangle",
-      "url": "https://bitbucket.org/secrettriangle"
+      "username": "dbkaplun",
+      "url": "https://bitbucket.org/dbkaplun"
     }]
   },
   "work": [{

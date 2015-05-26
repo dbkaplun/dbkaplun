@@ -7,5 +7,5 @@ before_install:
 notifications:
   webhooks:
     urls:
-      - http://secrettriangle.net:9001/travis
+      - http://dbkaplun.com:9001/travis
     on_failure: never

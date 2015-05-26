@@ -8,8 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "secrettriangle/beardtree"
+    "url": "dbkaplun/beardtree"
   },
-  "author": "Dan Kaplun <dan@secrettriangle.net>",
+  "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT"
 }
