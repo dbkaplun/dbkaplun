@@ -1,126 +1,97 @@
 {
   "basics": {
+    "namePrefix": "My name is",
     "name": "Dan Kaplun",
-    "picture": "http://dbkaplun.com/images/me.png",
+    "summary": "and I like making things. Let's make cool stuff together!",
+
+    "picture": "http://dbkaplun.com/images/lego-brick-transparent-small.png",
     "email": "dbkaplun@gmail.com",
     "phone": "(216) 236-4601",
     "website": "http://dbkaplun.com",
-    "summary": "I make computers do cool things for a living. Hire me!",
     "profiles": [{
       "network": "LinkedIn",
-      "url": "https://www.linkedin.com/pub/daniel-kaplun/28/589/34"
+      "username": "Dan Kaplun",
+      "url": "https://linkedin.com/in/dbkaplun"
     }, {
       "network": "Github",
-      "username": "dbkaplun",
+      "username": "@dbkaplun",
       "url": "https://github.com/dbkaplun"
-    }, {
-      "network": "Bitbucket",
-      "username": "dbkaplun",
-      "url": "https://bitbucket.org/dbkaplun"
     }]
   },
   "work": [{
-    "company": "Flashpoint Intel",
-    "position": "Senior Developer",
-    "website": "http://flashpoint-intel.com/",
-    "startDate": "2014-07-01",
-    "summary": "Deep web scraping and sentiment analysis [Stack: Python (Django), CentOS]",
+    "company": "Essence Digital",
+    "position": "Software Engineer",
+    "website": "http://essencedigital.com/",
+    "summary": "Global digital agency and the world's largest independent buyer of digital media<br>Python (Django), JavaScript (Node, Angular), Go, PostgreSQL, nginx, Ubuntu",
     "highlights": [
-      "Supervise all scraping efforts",
-      "Migrated from regular expression-based scraping to true HTML parsing"
-    ]
+      "Redesigned internal metrics tool from the ground up",
+      "Helped roll out new version of media-buying platform"
+    ],
+    "location": "New York, NY",
+    "startDate": "2015-02-01"
   }, {
     "company": "Transparensee",
     "position": "Senior Developer",
     "website": "http://transparensee.com/",
-    "startDate": "2012-05-01",
-    "endDate": "2013-09-01",
-    "summary": "Search engine platform with emphasis on fuzzy matching [Stack: Python (Django), JavaScript (jQuery), AWS (Amazon Linux on EC2, RDS, S3, etc.)]",
+    "summary": "Search engine platform with emphasis on fuzzy matching<br>Python (Django), JavaScript (jQuery), AWS (EC2, S3, RDS, SQS, SES)",
     "highlights": [
       "Maintainer of service and code for largest client",
       "Implemented role-based administration tool built on top of Django",
       "Redesigned search interface; introduced criteria prioritization"
-    ]
+    ],
+    "location": "New York, NY",
+    "startDate": "2012-05-01",
+    "endDate": "2013-09-01"
   }, {
     "company": "Offerpop",
     "position": "Developer",
     "website": "http://offerpop.com/",
-    "startDate": "2011-03-01",
-    "endDate": "2012-05-01",
-    "summary": "Social media marketing startup; agile, test-driven philosophy [Stack: Python (Django, mod_python), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu]",
+    "summary": "Social media marketing startup; agile, test-driven philosophy<br>Python (PSP, Django), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu",
     "highlights": [
       "Automated Facebook tab administration using Graph API",
       "Seamless video uploading using Vimeo's Advanced API and YouTube's Data API",
       "Robust voting API using Facebook authentication"
-    ]
+    ],
+    "location": "New York, NY",
+    "startDate": "2011-03-01",
+    "endDate": "2012-05-01"
   }],
   "education": [{
     "institution": "The Ohio State University",
     "website": "http://osu.edu/",
     "area": "Major: mathematics, minor: music",
+    "location": "Columbus, OH",
     "startDate": "2009-09-01",
     "endDate": "2010-12-01"
   }, {
     "institution": "Cleveland State University",
     "website": "http://csuohio.edu/",
     "area": "PSEOP: aced graduate-level math courses while enrolled in high school",
+    "location": "Cleveland, OH",
     "startDate": "2008-09-01",
     "endDate": "2009-06-01"
   }, {
     "institution": "Cuyahoga Community College",
     "website": "http://tri-c.edu/",
     "area": "PSEOP: exhausted course catalog in math",
+    "location": "Cleveland, OH",
     "startDate": "2007-09-01",
     "endDate": "2008-12-01"
   }, {
     "institution": "Richmond Heights High School",
     "website": "http://richmondheightsschools.org/",
     "area": "Top 10 graduate; summa cum laude; with honors",
+    "location": "Cleveland, OH",
     "startDate": "2005-11-01",
     "endDate": "2007-06-01"
   }],
-  "awards": [{
-    "title": "Annual CSU Freshman-Sophomore Mathematics Competition",
-    "website": "http://www.csuohio.edu/sciences/dept/mathematics/resources/fsmc.html",
-    "date": "2009-04-17",
-    "awarder": "Cleveland State University",
-    "summary": "1st Place while still attending high school"
-  }, {
-    "title": "Ohio Regional MAA Competition",
-    "website": "http://sections.maa.org/ohio/",
-    "date": "2009-06-01",
-    "awarder": "Mathematical Association of America",
-    "summary": "1st place 2-person team, 4th place overall"
-  }],
   "skills": [{
-    "name": "Web development",
-    "keywords": ["HTML", "CSS", "Javascript", "Django", "SailsJS", "jQuery", "Backbone"]
-  }, {
-    "name": "Programming",
-    "keywords": ["NodeJS (committer!)", "Python", "C", "C#", "Java", "PHP", "open-source"]
-  }, {
-    "name": "System administration",
-    "keywords": ["Ubuntu Server", "Amazon Linux", "CentOS"]
-  }, {
-    "name": "Database development and administration",
-    "keywords": ["PostgreSQL", "MySQL", "CouchDB"]
-  }],
-  "languages": [{
-    "language": "English",
-    "fluency": "Native speaker"
-  }, {
-    "language": "Russian",
-    "fluency": "Limited working proficiency"
-  }],
-  "interests": [{
-    "name": "Music",
-    "keywords": ["composition", "drums", "guitar"]
-  }, {
-    "name": "Bicycling",
-    "keywords": ["single-speed", "chromoly"]
-  }, {
-    "name": "Cars",
-    "keywords": ["'98 Honda Prelude", "'95 Honda Civic"]
+    "name": "",
+    "keywords": [
+      "NodeJS (committer!)", "Python", "Django", "SailsJS", "AngularJS",
+      "jQuery", "Bootstrap", "HTML", "CSS", "Javascript", "Ubuntu", "CentOS",
+      "PostgreSQL", "MySQL", "C", "C#", "Java", "PHP"
+    ]
   }],
   "references": [{
     "name": "Jason Brodsky-Porges (Product Manager at Offerpop)",
