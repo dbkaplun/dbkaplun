@@ -2,14 +2,19 @@
   "name": "dbkaplun",
   "version": "0.0.0",
   "description": "dbkaplun's site",
-  "main": "index.html",
-  "peerDependencies": {
-    "resume-cli": "*"
-  },
+  "main": "resume.json",
   "repository": {
     "type": "git",
     "url": "dbkaplun/dbkaplun"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.27",
+    "html-pdf": "^1.2.0",
+    "jsonresume-theme-briefstrap": "0.0.2"
+  },
+  "scripts": {
+    "build": "./build.js"
+  }
 }
