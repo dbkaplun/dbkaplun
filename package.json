@@ -12,7 +12,8 @@
   "dependencies": {
     "bluebird": "^2.9.27",
     "html-pdf": "^1.2.0",
-    "jsonresume-theme-briefstrap": "^0.0.5"
+    "isogram": "^0.5.0",
+    "jsonresume-theme-briefstrap": "^0.1.0"
   },
   "scripts": {
     "build": "./build.js"
