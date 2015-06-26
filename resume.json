@@ -90,8 +90,8 @@
     "name": "",
     "keywords": [
       "NodeJS (committer!)", "Python", "Django", "SailsJS", "AngularJS",
-      "jQuery", "Bootstrap", "HTML", "CSS", "Javascript", "Ubuntu", "CentOS",
-      "PostgreSQL", "MySQL", "C", "C#", "Java", "PHP"
+      "jQuery", "Bootstrap (committer!)", "HTML", "CSS", "Javascript",
+      "Ubuntu", "CentOS", "PostgreSQL", "MySQL", "C", "Java", "PHP"
     ]
   }],
   "references": [{
