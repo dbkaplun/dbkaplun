@@ -10,11 +10,11 @@
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^2.9.27",
-    "html-pdf": "^1.2.0",
-    "isogram": "^0.5.0",
-    "jsonresume-theme-briefstrap": "^0.2.4",
-    "lodash": "^3.10.1"
+    "bluebird": "2.9.27",
+    "html-pdf": "1.2.0",
+    "isogram": "0.5.0",
+    "jsonresume-theme-briefstrap": "0.2.5",
+    "lodash": "3.10.1"
   },
   "scripts": {
     "build": "./build.js"
