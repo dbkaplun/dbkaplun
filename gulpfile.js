@@ -11,12 +11,15 @@ var flatten = require('gulp-flatten');
 var Promise = require('bluebird');
 var isogram = require('isogram');
 var stream = require('stream');
+var theme = require('jsonresume-theme-briefstrap');
+var pdf = require('html-pdf');
+var path = require('path');
+var fs = Promise.promisifyAll(require('fs'));
 
 var browserify = require('browserify');
 var watchify = require('watchify');
 
-var path = require('path');
-var fs = Promise.promisifyAll(require('fs'));
+var resume = require('./resume');
 
 var dist = 'dist/';
 
@@ -59,7 +62,15 @@ gulp.task('build-css', function () {
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dist));
 });
-gulp.task('build', ['build-js', 'build-css', 'build-fonts']);
+gulp.task('build-resume', function (done) {
+  Promise.resolve(theme.render(resume)).then(function (html) {
+    return Promise.promisifyAll(pdf.create(html, {
+      filename: 'resume.pdf',
+      border: {top: '.75in', right: '.5in', bottom: '.75in', left: '.5in'}
+    })).toFileAsync()
+  }).asCallback(done);
+});
+gulp.task('build', ['build-js', 'build-css', 'build-fonts', 'build-resume']);
 
 gulp.task('before-watch', function () { watching = true; });
 gulp.task('watch', ['before-watch', 'build'], function () {
