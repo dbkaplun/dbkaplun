@@ -9,18 +9,25 @@ var postcss = require('gulp-postcss');
 var nano = require('cssnano');
 var flatten = require('gulp-flatten');
 var Promise = require('bluebird');
+var isogram = require('isogram');
+var stream = require('stream');
 
-var watchify = require('watchify');
 var browserify = require('browserify');
+var watchify = require('watchify');
 
 var path = require('path');
 var fs = Promise.promisifyAll(require('fs'));
 
 var dist = 'dist/';
 
+var browserifyStream = new stream.Readable();
+browserifyStream.push(isogram({id: 'UA-63592021-1'}));
+browserifyStream.push(null);
+
 var watching = false;
 var b = watchify(browserify(watchify.args))
   .add('index.js')
+  .add(browserifyStream)
   .on('log', gutil.log);
 
 function bundle () {
