@@ -29,6 +29,7 @@
     "gulp-postcss": "^6.0.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.2",
+    "gulp-uncss": "1.0.4",
     "gulp-util": "^3.0.7",
     "isogram": "^0.6.0",
     "vinyl-buffer": "^1.0.0",
