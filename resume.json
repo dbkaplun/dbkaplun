@@ -11,11 +11,11 @@
     "website": "http://dbkaplun.com",
     "profiles": [{
       "network": "LinkedIn",
-      "username": "Dan Kaplun",
+      "username": "linkedin.com/in/dbkaplun",
       "url": "https://linkedin.com/in/dbkaplun"
     }, {
       "network": "Github",
-      "username": "@dbkaplun",
+      "username": "github.com/dbkaplun",
       "url": "https://github.com/dbkaplun"
     }]
   },
