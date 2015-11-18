@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var less = require('gulp-less');
 var postcss = require('gulp-postcss');
 var nano = require('cssnano');
+var uncss = require('gulp-uncss');
 var flatten = require('gulp-flatten');
 var Promise = require('bluebird');
 var isogram = require('isogram');
@@ -54,6 +55,7 @@ gulp.task('build-css', function () {
     .pipe(sourcemaps.init())
       // Add transformation tasks to the pipeline here
       .pipe(less())
+      .pipe(uncss({html: ['index.html']}))
       .pipe(postcss([nano]))
       .on('error', gutil.log)
     .pipe(sourcemaps.write('.'))
