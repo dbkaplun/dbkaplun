@@ -110,9 +110,8 @@ DotMatrix.prototype.getY = function (x, z) {
   if (typeof self.programStart !== 'number') self.programStart = t;
   if (typeof self.programIndex !== 'number') self.programIndex = self.lastProgramIndex = randInt(pl);
   var elapsed = t - self.programStart;
-  var elapsedPrograms = elapsed/pd;
-  if (elapsedPrograms >= 1) {
-    self.programStart = t; // FIXME: don't skip if elapsedPrograms >> 1
+  if (elapsed >= pd) {
+    self.programStart += Math.floor(elapsed/pd)*pd;
     elapsed = mod(elapsed, pd);
     self.lastProgramIndex = self.programIndex;
     self.programIndex = randInt(pl);
