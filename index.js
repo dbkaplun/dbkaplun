@@ -18,6 +18,17 @@ DotMatrix.DEFAULT_OPTS = {
   interpolationDuration: .6,
   programDuration: 2,
   programs: [
+    function planeBounce (t, x, z) {
+      return Math.cos(Math.PI*t);
+    },
+    function planeRotate (t, x, z) {
+      var self = this;
+      var opts = self.opts;
+      x /= opts.xs/2;
+      z /= opts.zs/2;
+      t *= Math.PI;
+      return (Math.cos(t)*x - Math.sin(t)*z)/Math.SQRT2;
+    },
     function wobble (t, x, z) {
       var self = this;
       var opts = self.opts;
@@ -37,14 +48,6 @@ DotMatrix.DEFAULT_OPTS = {
       x /= opts.xs/2;
       z /= opts.zs/2;
       return Math.sin(Math.PI*t)*Math.cos(5*(x*x + z*z));
-    },
-    function plane (t, x, z) {
-      var self = this;
-      var opts = self.opts;
-      x /= opts.xs/2;
-      z /= opts.zs/2;
-      t *= Math.PI;
-      return (Math.cos(t)*x - Math.sin(t)*z)/Math.SQRT2;
     }
   ]
 };
