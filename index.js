@@ -16,7 +16,7 @@ DotMatrix.DEFAULT_OPTS = {
   xs: 20,
   zs: 20,
   yScale: 2,
-  material: new THREE.PointsMaterial({size: .75, vertexColors: THREE.VertexColors}),
+  material: new THREE.PointsMaterial({size: 1, vertexColors: THREE.VertexColors}),
 
   interpolationDuration: .6,
   programDuration: 2,
