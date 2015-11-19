@@ -60,12 +60,13 @@ function DotMatrix (opts) {
 }
 DotMatrix.prototype.init = function () {
   var self = this;
+  var opts = self.opts;
 
   self.scene = new THREE.Scene();
-  self.scene.fog = new THREE.Fog(0xEEEEEE, self.opts.near, self.opts.far);
+  self.scene.fog = new THREE.Fog(opts.backgroundColor || window.getComputedStyle(document.body).backgroundColor, opts.near, opts.far);
 
   var dims = 3;
-  var length = self.opts.xs * self.opts.zs * dims;
+  var length = opts.xs * opts.zs * dims;
   self.positions = new Float32Array(length);
   self.colors = new Float32Array(length);
 
@@ -73,19 +74,19 @@ DotMatrix.prototype.init = function () {
   self.geometry.addAttribute('position', new THREE.BufferAttribute(self.positions, dims));
   self.geometry.addAttribute('color', new THREE.BufferAttribute(self.colors, dims));
 
-  self.points = new THREE.Points(self.geometry, self.opts.material);
+  self.points = new THREE.Points(self.geometry, opts.material);
   self.scene.add(self.points);
 
-  self.camera = new THREE.PerspectiveCamera(self.opts.fov, self.opts.aspect, self.opts.near, self.opts.far);
-  self.camera.position.z = self.opts.xs*2;
-  self.camera.position.y = self.opts.zs*2 * Math.PI/6;
+  self.camera = new THREE.PerspectiveCamera(opts.fov, opts.aspect, opts.near, opts.far);
+  self.camera.position.z = opts.xs*2;
+  self.camera.position.y = opts.zs*2 * Math.PI/6;
   self.camera.lookAt(self.scene.position);
 
   self.renderer = new THREE.WebGLRenderer({antialias: true});
   self.renderer.setClearColor(self.scene.fog.color);
   self.renderer.setPixelRatio(window.devicePixelRatio);
   self.updateSize();
-  self.opts.el.appendChild(self.renderer.domElement);
+  opts.el.appendChild(self.renderer.domElement);
 
   window.addEventListener('resize', self.updateSize.bind(self), false);
 };
