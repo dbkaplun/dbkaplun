@@ -37,7 +37,7 @@
     "html-pdf": "1.4.0",
     "isogram": "^0.6.0",
     "jsonresume-theme-briefstrap": "0.2.5",
-    "smath": "dbkaplun/smath.js#b0c63be",
+    "smath": "dbkaplun/smath.js#8fecd82",
     "three": "^0.73.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
