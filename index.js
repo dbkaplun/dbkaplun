@@ -18,24 +18,27 @@ DotMatrix.DEFAULT_OPTS = {
   interpolationDuration: .6,
   programDuration: 2,
   programs: [
-    function (t, x, z) {
-      // wobbles
+    function wobble (t, x, z) {
       var self = this;
       var opts = self.opts;
       x /= opts.xs/2;
       z /= opts.zs/2;
       return Math.sin(Math.PI*(t + x*z));
     },
-    function (t, x, z) {
-      // ripple
+    function valley (t, x, z) {
+      var self = this;
+      var opts = self.opts;
+      z /= opts.zs/2;
+      return Math.sin(Math.PI*t)*Math.cos(Math.PI*z);
+    },
+    function droplet (t, x, z) {
       var self = this;
       var opts = self.opts;
       x /= opts.xs/2;
       z /= opts.zs/2;
-      return Math.sin(Math.PI*t)*Math.sin(4*(x*x + z*z));
+      return Math.sin(Math.PI*t)*Math.cos(5*(x*x + z*z));
     },
-    function (t, x, z) {
-      // plane tilt
+    function plane (t, x, z) {
       var self = this;
       var opts = self.opts;
       x /= opts.xs/2;
