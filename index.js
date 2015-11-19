@@ -120,7 +120,7 @@ DotMatrix.prototype.getY = function (x, z) {
   var y = programs[self.programIndex].call(self, t, x, z);
 
   var interp = elapsed / id;
-  if (interp < 1) {
+  if (interp <= 1 && self.programIndex !== self.lastProgramIndex) {
     var lastY = programs[self.lastProgramIndex].call(self, t, x, z);
     y = y*interp + lastY*(1 - interp);
   }
