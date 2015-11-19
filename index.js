@@ -55,15 +55,22 @@ DotMatrix.DEFAULT_OPTS = {
   ]
 };
 function DotMatrix (opts) {
-  this.opts = extend(true, null, DotMatrix.DEFAULT_OPTS, opts);
+  this.opts = extend(true, null, DotMatrix.DEFAULT_OPTS, {
+    backgroundColor: window.getComputedStyle(document.body).backgroundColor,
+    foregroundColor: window.getComputedStyle(document.body).color,
+  }, opts);
   this.init();
 }
 DotMatrix.prototype.init = function () {
   var self = this;
   var opts = self.opts;
 
+  ['backgroundColor', 'foregroundColor'].forEach(function (colorKey) {
+    opts[colorKey] = new THREE.Color(opts[colorKey]);
+  });
+
   self.scene = new THREE.Scene();
-  self.scene.fog = new THREE.Fog(opts.backgroundColor || window.getComputedStyle(document.body).backgroundColor, opts.near, opts.far);
+  self.scene.fog = new THREE.Fog(opts.backgroundColor, opts.near, opts.far);
 
   var dims = 3;
   var length = opts.xs * opts.zs * dims;
@@ -148,9 +155,9 @@ DotMatrix.prototype.updateGeometry = function () {
       // self.colors[i]     = 1 - c;
       // self.colors[i + 1] = c;
       // self.colors[i + 2] = 1;
-      self.colors[i]     = .5;
-      self.colors[i + 1] = .5;
-      self.colors[i + 2] = .5;
+      self.colors[i]     = opts.foregroundColor.r;
+      self.colors[i + 1] = opts.foregroundColor.g;
+      self.colors[i + 2] = opts.foregroundColor.b;
       i += 3;
     }
   }
