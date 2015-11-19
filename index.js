@@ -1,5 +1,8 @@
 var THREE = require('three');
 var extend = require('extend');
+var SMath = require('smath');
+
+extend(true, Math, new SMath({nbCos: 180, nbSin: 180})); // efficient cos, sin
 
 DotMatrix.DEFAULT_OPTS = {
   fov: 90,
