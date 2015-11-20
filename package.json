@@ -1,7 +1,7 @@
 {
   "name": "dbkaplun",
   "version": "1.0.1",
-  "description": "dbkaplun's site",
+  "description": "Dan Kaplun's website",
   "main": "index.html",
   "scripts": {
     "install": "gulp",
