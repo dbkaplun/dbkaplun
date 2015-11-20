@@ -64,13 +64,13 @@ gulp.task('build-css', function () {
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dist));
 });
-gulp.task('build-resume', function (done) {
-  Promise.resolve(theme.render(resume, {less: {append: 'blockquote { display: none; }'}})).then(function (html) {
+gulp.task('build-resume', function () {
+  return Promise.resolve(theme.render(resume, {less: {append: 'blockquote { display: none; }'}})).then(function (html) {
     return Promise.promisifyAll(pdf.create(html, {
       filename: 'resume.pdf',
       border: {top: '.75in', right: '.5in', bottom: '.75in', left: '.5in'}
-    })).toFileAsync()
-  }).asCallback(done);
+    })).toFileAsync();
+  });
 });
 gulp.task('build', ['build-js', 'build-css', 'build-fonts', 'build-resume']);
 
