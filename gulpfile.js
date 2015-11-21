@@ -25,7 +25,6 @@ var uncss = require('gulp-uncss');
 var flatten = require('gulp-flatten');
 
 // html
-var inlinesource = require('gulp-inline-source');
 var htmlmin = require('gulp-htmlmin');
 
 // pdf
@@ -75,7 +74,6 @@ gulp.task('build-css', function () {
 });
 gulp.task('build-html', ['build-js', 'build-css', 'build-fonts'], function () {
   return gulp.src(src+'index.html')
-    .pipe(inlinesource())
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('.'));
 });
