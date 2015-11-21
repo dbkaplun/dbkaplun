@@ -24,17 +24,21 @@ var uncss = require('gulp-uncss');
 // fonts
 var flatten = require('gulp-flatten');
 
+// html
+var inlinesource = require('gulp-inline-source');
+
 // pdf
 var theme = require('jsonresume-theme-briefstrap');
 var pdf = require('html-pdf');
 
 var resume = require('./resume');
 
+var src = 'src/';
 var dist = 'dist/';
 
 var watching = false;
 var b = watchify(browserify(watchify.args))
-  .add('index.js')
+  .add(src+'index.js')
   .add(str(isogram({id: 'UA-63592021-1'})))
   .on('log', gutil.log);
 
@@ -58,15 +62,20 @@ gulp.task('build-fonts', function () {
     .pipe(gulp.dest(path.join(dist, 'fonts')));
 });
 gulp.task('build-css', function () {
-  return gulp.src('index.less')
+  return gulp.src(src+'index.less')
     .pipe(sourcemaps.init())
       // Add transformation tasks to the pipeline here
       .pipe(less())
-      .pipe(uncss({html: ['index.html']}))
+      .pipe(uncss({html: [src+'index.html']}))
       .pipe(postcss([nano]))
       .on('error', gutil.log)
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dist));
+});
+gulp.task('build-html', ['build-js', 'build-css', 'build-fonts'], function () {
+  return gulp.src(src+'index.html')
+    .pipe(inlinesource())
+    .pipe(gulp.dest('.'));
 });
 gulp.task('build-pdf', function () {
   return Promise
@@ -78,7 +87,7 @@ gulp.task('build-pdf', function () {
       })).toFileAsync();
     });
 });
-gulp.task('build', ['build-js', 'build-css', 'build-fonts', 'build-pdf']);
+gulp.task('build', ['build-html', 'build-pdf']);
 
 gulp.task('before-watch', function () { watching = true; });
 gulp.task('watch', ['before-watch', 'build'], function () {
