@@ -4,7 +4,6 @@
   "description": "Dan Kaplun's website",
   "main": "index.html",
   "scripts": {
-    "install": "gulp",
     "build": "gulp",
     "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,6 +37,7 @@
     "html-pdf": "1.4.0",
     "isogram": "^0.6.0",
     "jsonresume-theme-briefstrap": "0.2.5",
+    "string-to-stream": "^1.0.1",
     "three": "^0.73.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
