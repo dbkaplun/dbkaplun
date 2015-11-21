@@ -125,7 +125,7 @@ DotMatrix.prototype.getY = function (x, z) {
     self.programStart += Math.floor(elapsed/pd)*pd;
     elapsed = mod(elapsed, pd);
     self.lastProgramIndex = self.programIndex;
-    self.programIndex = randInt(pl);
+    while (self.lastProgramIndex === self.programIndex) self.programIndex = randInt(pl);
   }
 
   var y = programs[self.programIndex].call(self, t, x, z);
