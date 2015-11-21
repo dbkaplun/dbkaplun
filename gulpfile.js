@@ -1,37 +1,41 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
+var Promise = require('bluebird');
+
+var fs = Promise.promisifyAll(require('fs'));
+var path = require('path');
+
+// js
+var browserify = require('browserify');
+var watchify = require('watchify');
 var uglify = require('gulp-uglify');
+var isogram = require('isogram');
+var str = require('string-to-stream');
+
+// css
 var less = require('gulp-less');
 var postcss = require('gulp-postcss');
 var nano = require('cssnano');
 var uncss = require('gulp-uncss');
+
+// fonts
 var flatten = require('gulp-flatten');
-var Promise = require('bluebird');
-var isogram = require('isogram');
-var stream = require('stream');
+
+// pdf
 var theme = require('jsonresume-theme-briefstrap');
 var pdf = require('html-pdf');
-var path = require('path');
-var fs = Promise.promisifyAll(require('fs'));
-
-var browserify = require('browserify');
-var watchify = require('watchify');
 
 var resume = require('./resume');
 
 var dist = 'dist/';
 
-var browserifyStream = new stream.Readable();
-browserifyStream.push(isogram({id: 'UA-63592021-1'}));
-browserifyStream.push(null);
-
 var watching = false;
 var b = watchify(browserify(watchify.args))
   .add('index.js')
-  .add(browserifyStream)
+  .add(str(isogram({id: 'UA-63592021-1'})))
   .on('log', gutil.log);
 
 function bundle () {
@@ -64,7 +68,7 @@ gulp.task('build-css', function () {
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dist));
 });
-gulp.task('build-resume', function () {
+gulp.task('build-pdf', function () {
   return Promise.resolve(theme.render(resume, {less: {append: 'blockquote { display: none; }'}})).then(function (html) {
     return Promise.promisifyAll(pdf.create(html, {
       filename: 'resume.pdf',
@@ -72,7 +76,7 @@ gulp.task('build-resume', function () {
     })).toFileAsync();
   });
 });
-gulp.task('build', ['build-js', 'build-css', 'build-fonts', 'build-resume']);
+gulp.task('build', ['build-js', 'build-css', 'build-fonts', 'build-pdf']);
 
 gulp.task('before-watch', function () { watching = true; });
 gulp.task('watch', ['before-watch', 'build'], function () {
