@@ -85,7 +85,8 @@ gulp.task('build-pdf', function () {
     .then(function (html) {
       return Promise.promisifyAll(pdf.create(html, {
         filename: 'resume.pdf',
-        border: {top: '.75in', right: '.5in', bottom: '.75in', left: '.5in'}
+        border: {top: '.75in', right: '.5in', bottom: '.75in', left: '.5in'},
+        timeout: 5*60*1000 // 5 minutes
       })).toFileAsync();
     });
 });
