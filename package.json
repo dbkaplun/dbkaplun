@@ -25,6 +25,7 @@
     "cssnano": "^3.3.2",
     "gulp": "^3.9.0",
     "gulp-flatten": "^0.2.0",
+    "gulp-htmlmin": "^1.2.0",
     "gulp-less": "^3.0.3",
     "gulp-postcss": "^6.0.1",
     "gulp-sourcemaps": "^1.6.0",
@@ -32,6 +33,7 @@
     "gulp-uncss": "1.0.4",
     "gulp-util": "^3.0.7",
     "isogram": "^0.6.0",
+    "string-to-stream": "^1.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.0"
