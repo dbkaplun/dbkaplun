@@ -94,6 +94,7 @@ gulp.task('before-watch', function () { watching = true; });
 gulp.task('watch', ['before-watch', 'build'], function () {
   b.on('update', bundle);
   gulp.watch('**/*.less', ['build-css']);
+  gulp.watch('**/*.html', ['build-html']);
 });
 
 gulp.task('default', ['build']);
