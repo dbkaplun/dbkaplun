@@ -25,7 +25,7 @@
     "cssnano": "^3.3.2",
     "extend": "^3.0.0",
     "fmath": "1.0.1",
-    "font-awesome": "^4.4.0",
+    "font-awesome": "^4.5.0",
     "gulp": "^3.9.0",
     "gulp-flatten": "^0.2.0",
     "gulp-htmlmin": "^1.2.0",
