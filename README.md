@@ -1,3 +1,3 @@
 # [dbkaplun.com](http://dbkaplun.com)
 
-Dan Kaplun's website
+[![dbkaplun.com](http://i.imgur.com/Ypc1SR4.gif)](http://dbkaplun.com)
