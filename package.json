@@ -22,7 +22,7 @@
     "bluebird": "^3.2.2",
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
-    "cssnano": "^3.5.1",
+    "cssnano": "^3.5.2",
     "extend": "^3.0.0",
     "fmath": "1.0.1",
     "font-awesome": "^4.5.0",
