@@ -47,7 +47,7 @@
     "company": "Offerpop",
     "position": "Developer",
     "website": "http://offerpop.com/",
-    "summary": "Social media marketing startup; agile, test-driven philosophy<br>Python (PSP, Django), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu",
+    "summary": "Social media marketing platform for Facebook and Twitter<br>Python (PSP, Django), JavaScript (jQuery, Prototype), MySQL, Apache, Ubuntu",
     "highlights": [
       "Automated Facebook tab administration using Graph API",
       "Seamless video uploading using Vimeo's Advanced API and YouTube's Data API",
