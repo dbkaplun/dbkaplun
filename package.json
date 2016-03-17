@@ -33,7 +33,7 @@
     "gulp-postcss": "^6.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
-    "gulp-uncss": "1.0.4",
+    "gulp-uncss": "1.0.5",
     "gulp-util": "^3.0.7",
     "html-pdf": "2.0.1",
     "isogram": "^0.6.0",
