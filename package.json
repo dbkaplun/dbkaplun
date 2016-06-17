@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/dbkaplun/dbkaplun#readme",
   "devDependencies": {
-    "bluebird": "^3.4.0",
+    "bluebird": "^3.4.1",
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.1",
     "cssnano": "^3.7.1",
