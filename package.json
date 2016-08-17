@@ -35,7 +35,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-uncss": "1.0.6",
     "gulp-util": "^3.0.7",
-    "html-pdf": "2.0.1",
+    "html-pdf": "2.1.0",
     "isogram": "^0.6.0",
     "jsonresume-theme-briefstrap": "0.2.6",
     "string-to-stream": "^1.1.0",
