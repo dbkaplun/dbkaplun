@@ -4,7 +4,7 @@
     "name": "Dan Kaplun",
     "summary": "and I like making things. Let's make cool stuff together!",
 
-    "pdfUrl": "resume.pdf",
+    "pdfUrl": "http://dbkaplun.com/resume.pdf",
     "picture": "http://dbkaplun.com/images/me.jpg",
     "email": "dbkaplun@gmail.com",
     "phone": "(216) 236-4601",
@@ -20,6 +20,18 @@
     }]
   },
   "work": [{
+    "company": "Twitch",
+    "position": "Sr. Javascript Engineer",
+    "website": "http://twitch.tv/",
+    "summary": "World's leading video platform and community for gamers<br>Go, Ruby (Rails), JavaScript (EmberJS), Redis, AWS",
+    "highlights": [
+      "Specified and developed realtime functionality for reactions using Redis for highly available caching",
+      "Significantly increased data tracking breadth and accuracy",
+      "Implemented emote filtering and other highly visible UI improvements"
+    ],
+    "location": "San Francisco, CA",
+    "startDate": "2016-05-01"
+  }, {
     "company": "Essence Digital",
     "position": "Software Engineer",
     "website": "http://essencedigital.com/",
@@ -29,7 +41,8 @@
       "Helped roll out new version of media-buying platform"
     ],
     "location": "New York, NY",
-    "startDate": "2015-02-01"
+    "startDate": "2015-02-01",
+    "endDate": "2016-04-01"
   }, {
     "company": "Transparensee",
     "position": "Senior Developer",
@@ -67,21 +80,21 @@
   }, {
     "institution": "Cleveland State University",
     "website": "http://csuohio.edu/",
-    "area": "PSEOP: aced graduate-level math courses while enrolled in high school",
+    "area": "Post-secondary: studied graduate math courses while enrolled in high school, 1st place in intracollegiate math competition, represented CSU as part of 1st place two-person team in MAA regionals",
     "location": "Cleveland, OH",
     "startDate": "2008-09-01",
     "endDate": "2009-06-01"
   }, {
     "institution": "Cuyahoga Community College",
     "website": "http://tri-c.edu/",
-    "area": "PSEOP: exhausted course catalog in math",
+    "area": "Post-secondary: exhausted course catalog in math",
     "location": "Cleveland, OH",
     "startDate": "2007-09-01",
     "endDate": "2008-12-01"
   }, {
     "institution": "Richmond Heights High School",
     "website": "http://richmondheightsschools.org/",
-    "area": "Top 10 graduate; summa cum laude; with honors",
+    "area": "Honors: top 10 graduate, summa cum laude",
     "location": "Cleveland, OH",
     "startDate": "2005-11-01",
     "endDate": "2007-06-01"

@@ -79,14 +79,12 @@ gulp.task('build-html', ['build-js', 'build-css', 'build-fonts'], function () {
 });
 gulp.task('build-pdf', function () {
   return Promise
-    .resolve(theme.render(resume, {less: {append: 'blockquote { display: none; }'}}))
-    .then(function (html) {
-      return Promise.promisifyAll(pdf.create(html, {
-        filename: 'resume.pdf',
-        border: {top: '.75in', right: '.5in', bottom: '.75in', left: '.5in'},
-        timeout: 5*60*1000 // 5 minutes
-      })).toFileAsync();
-    });
+    .resolve(theme.render(resume, {less: {append: '@font-size-base: 10px; blockquote {display: none}'}}))
+    .then(html => Promise.promisifyAll(pdf.create(html, {
+      filename: 'resume.pdf',
+      border: {top: '.5in', right: '.5in', bottom: '.5in', left: '.5in'},
+      timeout: 5*60*1000 // 5 minutes
+    })).toFileAsync());
 });
 gulp.task('build', ['build-html', 'build-pdf']);
 
