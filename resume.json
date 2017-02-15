@@ -102,9 +102,8 @@
   "skills": [{
     "name": "",
     "keywords": [
-      "NodeJS (committer!)", "Python", "Django", "SailsJS", "AngularJS",
-      "jQuery", "Bootstrap (committer!)", "HTML", "CSS", "Javascript",
-      "Ubuntu", "CentOS", "PostgreSQL", "MySQL", "C", "Java", "PHP"
+      "NodeJS", "Python", "Django", "React", "PHP", "AngularJS", "jQuery",
+      "Redis", "PostgreSQL", "MySQL", "Ubuntu", "CentOS", "C", "Java"
     ]
   }],
   "references": [{
