@@ -37,7 +37,7 @@
     "gulp-util": "^3.0.7",
     "html-pdf": "2.1.0",
     "isogram": "^0.6.0",
-    "jsonresume-theme-briefstrap": "0.2.6",
+    "jsonresume-theme-briefstrap": "1.0.0",
     "string-to-stream": "^1.0.1",
     "three": "^0.73.1",
     "vinyl-buffer": "^1.0.0",
