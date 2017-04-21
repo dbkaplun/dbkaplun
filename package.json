@@ -39,7 +39,7 @@
     "isogram": "^0.6.0",
     "jsonresume-theme-briefstrap": "1.0.0",
     "string-to-stream": "^1.0.1",
-    "three": "^0.73.1",
+    "three": "^0.85.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
